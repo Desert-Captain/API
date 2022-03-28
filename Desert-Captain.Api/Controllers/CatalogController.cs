@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Desert.Captain.Domain.Catalog;
+using Desert.Captain.Data;
 
 namespace Desert.Captain.Api.Controllers
 {
@@ -7,6 +8,11 @@ namespace Desert.Captain.Api.Controllers
     [Route("[controller]")]
     public class CatalogController : ControllerBase
     {
+        private readonly StoreContext _db;
+        public CatalogController(StoreContext db)
+        {
+            _db = db;
+        }
         [HttpGet]
         public IActionResult GetItems()
         {  
@@ -16,14 +22,14 @@ namespace Desert.Captain.Api.Controllers
                  new Item("Shorts", "Ohio State shorts.", "Nike", 44.99m)
 
             };
-            return Ok(items);
+            return Ok(_db.Items);
            
         }
         [HttpGet("{id;int}")]
         public IActionResult GetItem(int id)
         {
             var item = new Item("Shirt",  "Ohio state shirt.", "Nike", 29.99m);
-            item.id = id;
+            item.Id = id;
 
             return Ok(item);
         }
@@ -36,7 +42,7 @@ namespace Desert.Captain.Api.Controllers
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
             var item = new Item("Shirt", "Ohio State shrit.", "Nike", 29.99m);
-            item.id = id;
+            item.Id = id;
             item.AddRating(rating);
 
             return Ok(item);
