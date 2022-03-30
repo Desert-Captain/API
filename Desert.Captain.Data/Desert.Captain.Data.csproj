@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <ItemGroup>
-    <ProjectReference Include="..\Desert-Captain.Domain\Desert-Captain.Domain.csproj" />
+    <ProjectReference Include="..\Desert.Captain.Domain\Desert.Captain.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

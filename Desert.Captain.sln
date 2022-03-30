@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Captain.Api", "Desert-Captain.Api\Desert-Captain.Api.csproj", "{16ABE733-B402-458E-B869-39DC37ADA381}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Api", "Desert.Captain.Api\Desert.Captain.Api.csproj", "{16ABE733-B402-458E-B869-39DC37ADA381}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Captain.Domain", "Desert-Captain.Domain\Desert-Captain.Domain.csproj", "{E3C4134F-D7DB-4AEC-BC64-47DC6B9A2706}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Domain", "Desert.Captain.Domain\Desert.Captain.Domain.csproj", "{E3C4134F-D7DB-4AEC-BC64-47DC6B9A2706}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert-Captain.Data", "Desert-Captain.Data\Desert-Captain.Data.csproj", "{8A27481B-FD0F-42EF-99BF-66784309DFA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Data", "Desert.Captain.Data\Desert.Captain.Data.csproj", "{8A27481B-FD0F-42EF-99BF-66784309DFA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
