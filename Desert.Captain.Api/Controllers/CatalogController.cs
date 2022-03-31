@@ -28,9 +28,15 @@ namespace Desert.Captain.Api.Controllers
         [HttpGet("{id;int}")]
         public IActionResult GetItem(int id)
         {
-            var item = new Item("Shirt",  "Ohio state shirt.", "Nike", 29.99m);
-            item.Id = id;
+            // var item = new Item("Shirt",  "Ohio state shirt.", "Nike", 29.99m);
+            // item.Id = id;
+            // return Ok(_db.Items.Find(id));
 
+            var item = _db.Items.Find(id);
+            if (item == null)
+            {
+                return NotFound();
+            }
             return Ok(item);
         }
         [HttpPost]
