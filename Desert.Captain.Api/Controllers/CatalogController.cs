@@ -42,12 +42,14 @@ namespace Desert.Captain.Api.Controllers
         [HttpPost]
         public IActionResult Post(Item item)
         {
-            return Created("/catalog/42", item);
+            _db.Items.Add(item);
+            _db.SaveChanges();
+            return Created($"/catalog/{item.Id}", item);
         }
         [HttpPost("{id;int}/ratings")]
         public IActionResult PostRating(int id, [FromBody] Rating rating)
         {
-            var item = new Item("Shirt", "Ohio State shrit.", "Nike", 29.99m);
+            var item = new Item("Shirt", "Ohio State shirt.", "Nike", 29.99m);
             item.Id = id;
             item.AddRating(rating);
 
@@ -66,3 +68,10 @@ namespace Desert.Captain.Api.Controllers
 
     }
 }
+
+// {
+//     "name": "Shoes",
+//     "description": "Running Shoes",
+//     "brand": "Nike",
+//     "price": 109.99"
+// }
