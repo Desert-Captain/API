@@ -12,7 +12,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>Desert_Captain.Data</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>warnings</Nullable>
   </PropertyGroup>
 
 </Project>
