@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Domain", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Data", "Desert.Captain.Data\Desert.Captain.Data.csproj", "{8A27481B-FD0F-42EF-99BF-66784309DFA4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A459FD54-BEAC-4199-A328-F3E37055D021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Desert-Captain-API}.Domain.Tests", "tests\{Desert-Captain-API}.Domain.Tests\{Desert-Captain-API}.Domain.Tests.csproj", "{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,5 +38,12 @@ Global
 		{12F93607-3969-4BF4-A368-9D14C1AAE263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12F93607-3969-4BF4-A368-9D14C1AAE263}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12F93607-3969-4BF4-A368-9D14C1AAE263}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9} = {A459FD54-BEAC-4199-A328-F3E37055D021}
 	EndGlobalSection
 EndGlobal
