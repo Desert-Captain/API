@@ -1,1 +1,2 @@
 get http://localhost:7274/catalog
+DELETE https://localhost:7250/catalog/3
