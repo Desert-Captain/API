@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Desert.Captain.Domain.Catalog;
 using Desert.Captain.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Desert.Captain.Api.Controllers
 {
@@ -78,7 +80,8 @@ namespace Desert.Captain.Api.Controllers
             return NoContent();
 
         }
-        [HttpDelete("{id;int}")]
+        [HttpDelete("{id:int}")]
+        [Authorize("delete:catalog")]
         public IActionResult Delete(int id)
         {
             var item = _db.Items.Find(id);
