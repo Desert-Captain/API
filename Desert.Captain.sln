@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Data", "Dese
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A459FD54-BEAC-4199-A328-F3E37055D021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{Desert-Captain-API}.Domain.Tests", "tests\{Desert-Captain-API}.Domain.Tests\{Desert-Captain-API}.Domain.Tests.csproj", "{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desert.Captain.Api.Domain.Tests", "tests\Desert.Captain.Api.Domain.Tests\Desert.Captain.Api.Domain.Tests.csproj", "{8B1A06C5-0614-48CB-BE57-27AA42C5A2E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

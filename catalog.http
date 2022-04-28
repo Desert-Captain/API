@@ -1,0 +1,13 @@
+DELETE https://localhost:7274/catalog/3
+
+#### GET token from Autho0
+curl --request POST \
+  --url httpS://dev-6ncr1u17.us.auth0.com/oauth/token \
+  --header 'content-type: application/json' \
+  --data '{"client_id":"9R37jF8ZLVbDq1LEUcQaGhnl60QUJ8xf","client_secret":"Aed-x0n-4oxFfokej5tSCPgSareIckUR53cOifCxhQ2fwPCkiJPDI2bn8C4Mv87E","audience":"https://desert-captain","grant_type":"client_credentials"}'
+
+#### DELETE a Item tO the Catalog collection
+curl --request POST \
+  --url http://localhost:7274/catalog/3 \
+  --header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlpFNG1rdnFBanhjUUpMbTFWYzdwVSJ9.eyJpc3MiOiJodHRwczovL2Rldi02bmNyMXUxNy51cy5hdXRoMC5jb20vIiwic3ViIjoiOVIzN2pGOFpMVmJEcTFMRVVjUWFHaG5sNjBRVUo4eGZAY2xpZW50cyIsImF1ZCI6Imh0dHBzOi8vZGVzZXJ0LWNhcHRhaW4iLCJpYXQiOjE2NTExNjUwMzEsImV4cCI6MTY1MTI1MTQzMSwiYXpwIjoiOVIzN2pGOFpMVmJEcTFMRVVjUWFHaG5sNjBRVUo4eGYiLCJzY29wZSI6ImRlbGV0ZTpjYXRhbG9nIiwiZ3R5IjoiY2xpZW50LWNyZWRlbnRpYWxzIn0.NGn2D_f8OnReJWICZOjH8dMuuY41PXylNfqbI009V7WHHLa6neuukzCBNRDbjsRYyDi8yclmz20Ef1ZNbYaCDXq-d9aAM6NOkiqVMZKzkyKY1OaCPjX2FP8wyqlyl4VB5MBJCi2t69XSidpdIF5kVlLdBmscBnA2TjTOx2sUboRinCSWt-JFMsfM1tBo8iXOqbgXJZVYcLT33ereyiP8EOyoLS4_KfXUtikvwzsqt6AAUROtZzJbfmdTJdsSDYX11uDvVn4KNJSZ-iVcaLkt5oqEeHD-CUdZoOwq5y7ityVtMs1h996l3Cvv_4kPaIv6fbXQ5nAhfiMfzra_FFlwXA' \
+ 
